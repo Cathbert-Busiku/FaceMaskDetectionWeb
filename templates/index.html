@@ -55,7 +55,7 @@
 			background-color: black;
         }
         
-		@media Screen and (max-width:700px){
+		@media Screen and (max-width: 768px){
 
 			.body{
               display:flex;
@@ -74,22 +74,39 @@
 
 			#video{
 				justify-content: center;
+				margin:auto;
+				display:flex;
 			}
+			
 			#output{
 				justify-content: center;
 				floate: center;
 				margin:auto;
 				position:relative;
 				top:-480px;
-				left:0px
+				left:0px;
+				right:10px;
 			}
 		}
         
-        @media Screen and (min-width:1000px)
+        @media Screen and (max-width:500px)
         { 
-            section{
-                width: 30%
-            }
+            #output{
+				justify-content: center;
+				floate: center;
+				margin:auto;
+				position:relative;
+				top:-480px;
+				left:0px;
+				right:10px;
+			}
+
+			#video{
+				justify-content: center;
+				margin:auto;
+				display:flex;
+			}
+            
        
         }
 
@@ -131,7 +148,7 @@
 	 <div class="view">
 		<div class="row " style="height:480px">
 			<video id="video" playsinline class="border " style="margin:auto;display:inline-block;"></video>
-			<canvas id="output" class="canvas-output" style="margin:auto;position:relative;top:-480px;left:10px"></canvas>
+			<canvas id="output" class="canvas-output" style="margin:auto;position:relative;top:-480px;"></canvas>
 			<div class="float-right">
 	    	
 	          </div>
