@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Face mask detection </title>
+	<title> Face mask detection</title>
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld" />
-    <link rel="stylesheet" type="text/css" href="enhanced.css" media="screen  and (min-width: 40.5em)" />
    <style>
    
         body{
@@ -55,58 +53,12 @@
 			background-color: black;
         }
         
-		@media Screen and (max-width: 768px){
-
-			.body{
-              display:flex;
-              
-              justify-content: center;
-              width: 95%;
-              overflow: hidden;
-             
-          }
-		    .view{
-
-			  justify-content: center;
-              width: 90%;
-              overflow: hidden;
-			}
-
-			#video{
-				justify-content: center;
-				margin:auto;
-				display:flex;
-			}
-			
-			#output{
-				justify-content: center;
-				floate: center;
-				margin:auto;
-				position:relative;
-				top:-480px;
-				left:0px;
-				right:10px;
-			}
-		}
         
-        @media Screen and (max-width:500px)
+        @media Screen and (min-width:1000px)
         { 
-            #output{
-				justify-content: center;
-				floate: center;
-				margin:auto;
-				position:relative;
-				top:-480px;
-				left:0px;
-				right:10px;
-			}
-
-			#video{
-				justify-content: center;
-				margin:auto;
-				display:flex;
-			}
-            
+            section{
+                width: 30%
+            }
        
         }
 
@@ -148,7 +100,7 @@
 	 <div class="view">
 		<div class="row " style="height:480px">
 			<video id="video" playsinline class="border " style="margin:auto;display:inline-block;"></video>
-			<canvas id="output" class="canvas-output" style="margin:auto;position:relative;top:-480px;"></canvas>
+			<canvas id="output" class="canvas-output" style="margin:auto;position:relative;top:-480px;left:10px"></canvas>
 			<div class="float-right">
 	    	
 	          </div>
